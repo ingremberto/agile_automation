@@ -1,0 +1,112 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <button type="button" class="btn btn-outline-primary fas fa-plus" [routerLink]="['/paso']" (click)="collapse.display='inline-block'"
+          aria-controls="collapseBasic"> Nuevo Paso</button>
+          <button type="button" class="btn btn-outline-primary fas fa-plus" [routerLink]="['/cp']" (click)="collapse.display='inline-block'"
+          aria-controls="collapseBasic"> Caso Prueba</button>
+        </ol>
+      </nav>
+      <div class="jumbotron" id="collapseBasic" [collapse]="!isCollapsed" #collapse="bs-collapse">
+            <form>
+                    <div class="form-row">
+                     <div class="col-md-5 mb-2">
+                         <input type="text" class="form-control" placeholder="Id Caso">
+                     </div>
+                     <div class="col-md-5 mb-2">
+                            <input type="text" class="form-control" placeholder="Dato Entrada">
+                        </div>
+                   <div class="col-md-5 mb-1">Nombre Escenario
+                            <div class="form-group">
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Activo</option>
+                                    <option>Inactivo</option>
+                                  </select><br>
+                            </div>
+                  </div>
+                  <div class="col-md-5 mb-1">Nombre Pantalla
+                  <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Activo</option>
+                          <option>Inactivo</option>
+                        </select><br>
+                  </div>
+                </div>
+                  <div class="col-md-5 mb-2">Nombre Objeto
+                  <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Activo</option>
+                          <option>Inactivo</option>
+                        </select><br>
+                  </div>
+                </div>
+                  <div class="col-md-5 mb-2">Estado
+                  <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Activo</option>
+                          <option>Inactivo</option>
+                        </select><br>
+                  </div>
+                </div>
+
+                    <div class="col-md-4 mb-3">
+                      <input type="text" class="form-control" placeholder="Accion 1">
+                  </div>
+                  <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Accion 2">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                            <input type="text" class="form-control" placeholder="Accion 3">
+                        </div>
+                    <div class="col-auto">
+                            <button type="submit" class="btn btn-dark mb-2"> Crear </button>
+                    </div>
+                    </div>
+            </form>
+        </div>
+
+<div class="card text-center">
+    <div class="card-header">
+      Resumen de Pasos
+    </div>
+    <div class="card-body">
+      
+        <div class="table-wrapper-scroll-y my-custom-scrollbar">
+        <table class="table">
+            <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Nombre Escenario</th>
+                  <th scope="col">Descripcion</th>
+                  <th scope="col">Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+               <tr>
+                  <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                  <div class="row">
+                      <div class="col-xs-6 col-6 col-md-5 col-lg-3">
+                          <th>
+                        <bs-sortable
+                          [(ngModel)]="itemObjectsLeft"
+                          fieldName="name"                       
+                        ></bs-sortable>
+                      </th>
+                      </div>
+                    </div>
+                  </tr>    
+            </tbody>
+          </table>
+        </div>
+        
+       </div>
+    <div class="card-footer text-muted">
+      <a href="" >Actualizar</a><br>
+    </div>
+  </div>
+  <br>
+
+
+
+  <br><br><br>

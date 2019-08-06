@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<button type="button" class="btn btn-outline-primary fas fa-plus" [routerLink]="['/pantalla']" (click)="collapse.display='inline-block'"
+aria-controls="collapseBasic"> Nueva Objeto </button>
+<p></p>
+<div class="jumbotron" id="collapseBasic" [collapse]="!isCollapsed" #collapse="bs-collapse">
+    <form>
+            <div class="form-row">
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="Nombre Objeto">
+            </div>
+            <div class="col-3">
+              <input type="text" class="form-control" placeholder="Nombre Propiedad">
+          </div>
+          <div class="col-3">
+            <input type="text" class="form-control" placeholder="Nombre Pantalla">
+        </div>
+            <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Crear</button>
+            </div>
+            </div>
+    </form>
+</div>
+
+<div class="card text-center">
+        <div class="card-header">
+          Resumen de Objetos
+        </div>
+        <div class="card-body">
+            <div class="table-wrapper-scroll-y my-custom-scrollbar">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Nombre Objeto</th>
+                    <th scope="col">Nombre Propiedad</th>
+                    <th scope="col">Nombre Pantalla</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                    <td>Pruebas Automation</td>
+                    <td>Pruebas Automation</td>
+                    <td>Pruebas Automation</td>
+                  </tr>
+                  <tr>
+                      <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                      <td>Qa</td>
+                      <td>Pruebas Automation</td>
+                      <td>Pruebas Automation</td>
+                  </tr>
+                  <tr>
+                      <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                      <td>Pruebas Automation</td>
+                      <td>Pruebas Automation</td>
+                      <td>Pruebas Automation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                        <td>Qa</td>
+                        <td>Pruebas Automation</td>
+                        <td>Pruebas Automation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                        <td>Pruebas Automation</td>
+                        <td>Pruebas Automation</td>
+                        <td>Pruebas Automation</td>
+                      </tr>
+                      <tr>
+                          <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                          <td>Qa</td>
+                          <td>Pruebas Automation</td>
+                          <td>Pruebas Automation</td>
+                      </tr>
+                </tbody>
+              </table>
+            </div>
+           </div>
+        <div class="card-footer text-muted">
+          <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-refresh"></span> Nuevo Objeto
+          </button> 
+        </div>
+      </div>
+      <br>
+
+ 
+
+
+      <br><br><br>

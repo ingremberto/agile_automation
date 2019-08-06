@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <button type="button" class="btn btn-outline-primary fas fa-plus" [routerLink]="['/cp']" (click)="collapse.display='inline-block'"
+          aria-controls="collapseBasic"> Caso Prueba</button><br>
+        </ol>
+      </nav>
+<div class="jumbotron" id="collapseBasic" [collapse]="!isCollapsed" #collapse="bs-collapse">
+    <form>
+            <div class="form-row">
+             <div class="col-md-4 mb-3">
+                 <input type="text" class="form-control" placeholder="Id">
+             </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" placeholder="Nombre CP">
+            </div>
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" placeholder="Resultado Esperado">
+          </div>
+          <div class="col-md-4 mb-3">Nombre Pantalla
+          <div class="form-group">            
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Activo</option>
+                  <option>Inactivo</option>
+                </select><br>
+          </div>
+        </div>
+          <div class="col-md-4 mb-3">Nombre Objeto
+          <div class="form-group">            
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Activo</option>
+                  <option>Inactivo</option>
+                </select><br>
+          </div>
+        </div>
+          <div class="col-md-4 mb-3">Estado
+          <div class="form-group">            
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Activo</option>
+                  <option>Inactivo</option>
+                </select><br>
+          </div>
+        </div>
+            <div class="col-auto">
+                    <button type="submit" class="btn btn-dark mb-2"> Crear </button>
+            </div>
+            </div>
+    </form>
+</div>
+
+<div class="card text-center">
+        <div class="card-header">
+          Resumen de Casos de Prueba
+        </div>
+        <div class="card-body">
+            <div class="table-wrapper-scroll-y my-custom-scrollbar">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Nombre Escenario</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                    <td>Pruebas Automation</td>
+                    <td>Pruebas Automation</td>
+                    <td>Pruebas Automation</td>
+                  </tr>
+                  <tr>
+                      <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                      <td>Qa</td>
+                      <td>Pruebas Automation</td>
+                      <td>Pruebas Automation</td>
+                  </tr>
+                  <tr>
+                      <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                      <td>Pruebas Automation</td>
+                      <td>Pruebas Automation</td>
+                      <td>Pruebas Automation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                        <td>Qa</td>
+                        <td>Pruebas Automation</td>
+                        <td>Pruebas Automation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></th>
+                        <td>Pruebas Automation</td>
+                        <td>Pruebas Automation</td>
+                        <td>Pruebas Automation</td>
+                      </tr>
+                </tbody>
+              </table>
+            </div>
+           </div>
+        <div class="card-footer text-muted">
+     
+          <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Nuevo Escenario
+        </button>
+        </div>
+      </div>
+      <br>
+      <button type="button" class="btn btn-outline-primary fas fa-plus" [routerLink]="['/paso']" (click)="collapse.display='inline-block'"
+      aria-controls="collapseBasic"> Nuevo Paso</button>
+
+      <br><br><br>
