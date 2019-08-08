@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProyectoComponent } from './proyecto/proyecto.component';
-import { PantallasComponent } from './pantallas/pantallas.component';
-import { HomeComponent } from './home/home.component';
-import { ObjetoComponent } from './objeto/objeto.component';
-import { EscenarioComponent } from './escenario/escenario.component';
-import { CpComponent } from './cp/cp.component';
-import { PasoComponent } from './paso/paso.component';
+import { ProyectoComponent } from './vistas/proyecto/proyecto.component';
+import { PantallasComponent } from './vistas/pantallas/pantallas.component';
+import { HomeComponent } from './vistas/home/home.component';
+import { ObjetoComponent } from './vistas/objeto/objeto.component';
+import { EscenarioComponent } from './vistas/escenario/escenario.component';
+import { CpComponent } from './vistas/cp/cp.component';
+import { PasoComponent } from './vistas/paso/paso.component';
 
 
 
