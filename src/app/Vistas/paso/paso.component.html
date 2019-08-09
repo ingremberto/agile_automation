@@ -4,8 +4,6 @@
         <ol class="">
           <button type="button" class="shadow p-3 mb-5 bg-black rounded btn btn-outline-primary fas fa-plus" [routerLink]="['/paso']" (click)="collapse.display='inline-block'"
           aria-controls="collapseBasic"> Nuevo Paso</button>
-          <button type="button" class="shadow p-3 mb-5 bg-black rounded btn btn-outline-primary fas fa-plus" [routerLink]="['/cp']" (click)="collapse.display='inline-block'"
-          aria-controls="collapseBasic"> Caso Prueba</button>
         </ol>
 
       <div class="" id="collapseBasic" [collapse]="!isCollapsed" #collapse="bs-collapse">
@@ -102,7 +100,14 @@
         
        </div>
     <div class="card-footer text-muted">
-      <a href="" >Actualizar</a><br>
+        <button type="button" class="btn btn-outline-primary fas fa-plus" [routerLink]="['/paso']" (click)="collapse.display='inline-block'"
+        aria-controls="collapseBasic"> Nuevo Paso</button> |  
+        <button type="button" class="btn btn-outline-success fas fa-plus "  [routerLink]="['/cp']"  (click)="collapse.display='inline-block'"
+        aria-controls="collapseBasic"> Caso Prueba </button>  | 
+      <button type="button" class="btn btn-outline-danger fas fa-minus margin-right"  (click)="collapse.display='inline-block'"
+        aria-controls="collapseBasic"> Eliminar</button> |  
+        <button type="button" class="btn btn-outline-info fas fa-spinner margin-right "  (click)="collapse.display='inline-block'"
+        aria-controls="collapseBasic"> Modificar </button>
     </div>
   </div>
   <br>

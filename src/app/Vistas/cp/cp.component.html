@@ -100,16 +100,19 @@
             </div>
            </div>
         <div class="card-footer text-muted">
-     
-          <button type="button" class="btn btn-default btn-lg">
-                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Nuevo Escenario
-        </button>
+            <button type="button" class="btn btn-outline-success fas fa-plus "  [routerLink]="['/cp']"  (click)="collapse.display='inline-block'"
+            aria-controls="collapseBasic"> Caso Prueba </button>  | 
+            <button type="button" class="btn btn-outline-primary fas fa-plus" [routerLink]="['/paso']" (click)="collapse.display='inline-block'"
+            aria-controls="collapseBasic"> Nuevo Paso</button> |  
+          <button type="button" class="btn btn-outline-danger fas fa-minus margin-right"  (click)="collapse.display='inline-block'"
+            aria-controls="collapseBasic"> Eliminar</button> |  
+            <button type="button" class="btn btn-outline-info fas fa-spinner margin-right "  (click)="collapse.display='inline-block'"
+            aria-controls="collapseBasic"> Modificar </button>
         <p></p>
         </div>
       </div>
       <br> 
-      <button type="button" class="btn btn-outline-primary fas fa-plus" [routerLink]="['/paso']" (click)="collapse.display='inline-block'"
-      aria-controls="collapseBasic"> Nuevo Paso</button>
+
 
       <p><br></p>
       <br><br><br>
